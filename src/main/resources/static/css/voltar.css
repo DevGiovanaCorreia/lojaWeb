@@ -1,0 +1,12 @@
+@charset "UTf-8";
+
+header a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover{
+    color: rgb(54, 54, 255);
+}
+

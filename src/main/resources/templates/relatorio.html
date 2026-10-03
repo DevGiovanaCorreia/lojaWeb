@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relatorio do dia</title>
+    <link rel="stylesheet" th:href="@{/css/voltar.css}"> 
+    <link rel="stylesheet" th:href="@{/css/global.css}">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100" >
+     <header class="navbar shadow">
+         
+         <p>Loja Web</p>
+         <a th:href="@{/menu}">Voltar</a> 
+     
+     </header>
+    
+    <main class="container flex-grow-1 my-5">
+        <h2 class="text-center mb-4">Relatório de Vendas</h2> 
+        
+        <div class="card shadow p-4 mx-auto" style="max-width: 600px;">
+            <div class="mb-3"> 
+                <label for="funcionario" class="form-label"> Funcionário </label> 
+                <select id="funcionario" class="form-select">
+                    
+                    <option value="">Selecione um funcionário</option>
+                    
+                </select> 
+            </div> 
+        </div> 
+        
+        <div class="container mt-5"> 
+            
+            <h3 class="text-center mb-3">Vendas do dia</h3>
+            
+            <div class="table-responsive"> 
+                <table class="table table-bordered table-striped table-hover text-center">
+                    <thead class="table-danger">
+                        
+                        <tr> 
+                            <th>ID</th>
+                            <th>Cliente</th> 
+                            <th>Funcionario</th>
+                            <th>Pagamento</th>
+                            <th>Total</th> 
+                        </tr>
+                    
+                    </thead> 
+                    
+                    <tbody id="tabelaRelatorio">
+                        
+                    </tbody> 
+                </table>
+            </div> 
+            
+            <div class="text-center mt-4">
+                
+                <h4>Total de vendas</h4>
+                <label class="form-label">Total de vendas</label>
+    <h4 id="total">R$ 0,00</h4>
+                
+            </div>
+        </div>
+    </main> 
+    
+    <footer class="text-white text-center shadow"> 
+        
+        <p>Copyright &copy; - 2026</p>
+        
+    </footer>
+    
+    <script th:src="@{/javaScript/relat.js}"></script>
+</body>
+</html>

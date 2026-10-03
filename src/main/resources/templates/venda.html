@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Venda - Loja Web</title>
+
+    <link rel="stylesheet" th:href="@{/css/voltar.css}">
+    <link rel="stylesheet" th:href="@{/css/global.css}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <header class="navbar shadow">
+        <p>Loja Web</p>
+        <a th:href="@{/menu}">Voltar</a>
+    </header>
+
+    <main class="container flex-grow-1 my-5">
+
+        
+        <div class="card shadow p-4 mx-auto mb-4" style="max-width: 600px;">
+
+            <div class="mb-3">
+                <label for="funcionario" class="form-label">Funcionário</label>
+                <select id="funcionario" class="form-select">
+                    <option value="">Selecione um funcionário</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="cliente" class="form-label">Cliente</label>
+                <select id="cliente" class="form-select">
+                    <option value="">Selecione um cliente</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="pagamento" class="form-label">
+                    Forma de pagamento
+                </label>
+
+                <select id="pagamento" class="form-select">
+                    <option value="">Selecione</option>
+                    <option value="Credito">Crédito</option>
+                    <option value="Debito">Débito</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                </select>
+            </div>
+
+        </div>
+
+       
+        <div class="card shadow p-4 mx-auto mb-4" style="max-width: 600px;">
+
+            <div class="mb-3">
+                <label for="produto" class="form-label">Produto</label>
+
+                <select id="produto" class="form-select">
+                    <option value="">Selecione um produto</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="quantidade" class="form-label">Quantidade</label>
+
+                <input type="number"
+                       id="quantidade"
+                       class="form-control"
+                       min="1"
+                       step="1">
+            </div>
+
+            <div class="d-flex gap-2 justify-content-center mt-3">
+                <input type="button"
+                       value="Adicionar"
+                       id="botaoAdicionar"
+                       class="btn btn-primary">
+            </div>
+
+        </div>
+
+        
+        <div class="container mt-5">
+
+            <h3 class="text-center mb-3">Carrinho</h3>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover text-center">
+
+                    <thead class="table-danger">
+                        <tr>
+                            <th>ID</th>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelaVenda">
+                    </tbody>
+
+                </table>
+            </div>
+
+            <div class="mb-3 text-end">
+                <label class="form-label">Total</label>
+                <h4 id="total">R$ 0,00</h4>
+            </div>
+
+            <div class="d-flex gap-2 justify-content-center mt-3">
+                <input type="button"
+                       value="Finalizar"
+                       id="botaoFinalizar"
+                       class="btn btn-primary">
+
+                <input type="button"
+                       value="Cancelar"
+                       id="botaoCancelar"
+                       class="btn btn-secondary">
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="text-white text-center shadow mt-auto">
+        <p class="mb-0">Copyright &copy; - 2026</p>
+    </footer>
+
+    <script th:src="@{/javaScript/venda.js}"></script>
+
+</body>
+</html>
+

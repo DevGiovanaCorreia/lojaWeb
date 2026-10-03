@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br"   xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>categoria</title>
+   
+    <link rel="stylesheet" th:href="@{/css/voltar.css}">
+    <link rel="stylesheet" th:href="@{/css/global.css}">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100" >
+             <header class="navbar shadow">
+        <p>Loja Web</p>
+        <a th:href="@{/menu}">Voltar</a>
+    </header>
+
+    <main class="container flex-grow-1 my-5">
+
+        <div class="card shadow p-4 mx-auto" style="max-width: 600px;">
+
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome Categoria</label>
+                <input type="text" id="nome" class="form-control">
+            </div>
+
+            <div class="d-flex gap-2 justify-content-center mt-3">
+                <input type="button" value="Cadastrar" class="btn btn-primary">
+                <input type="button" value="Atualizar" class="btn btn-primary">
+                <input type="button" value="Excluir" class="btn btn-primary">
+                <input type="button" value="Limpar" class="btn btn-primary">
+            </div>
+
+        </div>
+
+        <div class="container mt-5">
+            <h3 class="text-center mb-3">Categoria</h3>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover text-center">
+                    <thead class="table-danger">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome Categoria</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelaCategoria">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-white text-center shadow">
+        <p>Copyright &copy; - 2026</p>
+    </footer>
+
+    <script th:src="@{/javaScript/categ.js}"></script>
+</body>
+</html>

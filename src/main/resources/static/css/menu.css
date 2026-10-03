@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+h1{
+    padding: 5px;
+    font-size: 20px;
+    color: #38040e;
+}
+
+main{
+    margin: 50px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container  a{
+text-decoration: none;
+color: black;
+}
+
+.container a:hover{
+    color: blue;
+}
+
+#cliente{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#funcionario{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#fornecedor{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#produto{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#categoria{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#venda{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#relatorio{
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid gray;
+    width: 640px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
