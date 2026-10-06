@@ -104,5 +104,15 @@ public void setItens(List<ItemVenda> itens) {
 public void adicionarItem(ItemVenda item) {
     itens.add(item);
 }
+
+public double calcularTotal() {
+    double total = 0;
+
+    for (ItemVenda item : itens) {
+        total += item.getPreco_unitario() * item.getQuantidade();
+    }
+
+    return total;
+}
       
 }
